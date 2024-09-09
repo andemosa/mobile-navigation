@@ -39,7 +39,7 @@ const MobileNav = () => {
     <div className="w-full max-w-md mx-auto bg-white overflow-hidden mt-2">
       {/* Show the back button if there is navigation history */}
       {navStack.length > 0 && (
-        <div className="flex items-center p-4 bg-gray-100 border-b">
+        <div className="flex items-center p-4 bg-gray-100 border-b text-slate-800">
           <button onClick={handleBackClick} className="mr-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ const MobileNav = () => {
             </svg>
           </button>
           {/* Show the current navigation title */}
-          <span className="font-semibold">{titleStack.slice(-1)}</span>
+          <span className="font-semibold text-slate-800">{titleStack.slice(-1)}</span>
         </div>
       )}
 
@@ -81,7 +81,7 @@ const MobileNav = () => {
             ) : (
               <button
                 onClick={() => handleItemClick(item)}
-                className="w-full text-left flex justify-between items-center"
+                className="w-full text-left flex justify-between items-center hover:text-slate-500 text-slate-800"
               >
                 <span>{item.title}</span>
                 {/* Show the right arrow icon if the item has children */}

@@ -14,7 +14,7 @@ export default function CurrPage({ params }: { params: { route: string[] } }) {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-white text-foreground">
+    <div className="flex flex-col h-screen bg-white text-slate-800">
       <header className="flex items-center justify-between px-4 py-3 border-b">
         <Link href="#" className="text-lg font-semibold" prefetch={false}>
           Mobile Navigation
@@ -35,7 +35,7 @@ export default function CurrPage({ params }: { params: { route: string[] } }) {
         </Sheet>
       </header>
 
-      <section className="my-4 text-center text-2xl font-bold capitalize">
+      <section className="my-4 text-center text-2xl font-bold capitalize px-4">
         {showParams(params.route)}
       </section>
     </div>
