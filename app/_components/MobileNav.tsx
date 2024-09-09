@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Link as LinkIcon } from "lucide-react";
+import { motion } from "framer-motion";
 
 import { navigation, NavigationType } from "@/lib/constants";
 
@@ -60,7 +61,13 @@ const MobileNav = () => {
       {/* Display the list of current navigation items */}
       <ul className="divide-y divide-gray-200">
         {currList.map((item) => (
-          <li key={item.title} className="p-4">
+          <motion.li
+            key={item.title}
+            className="p-4"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ ease: "easeInOut", duration: 0.75 }}
+          >
             {item.url ? (
               <Link
                 key={item.title}
@@ -95,7 +102,7 @@ const MobileNav = () => {
                 )}
               </button>
             )}
-          </li>
+          </motion.li>
         ))}
       </ul>
     </div>

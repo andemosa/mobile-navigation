@@ -52,4 +52,3 @@ const navigationFn = () => [
 export const navigation = navigationFn();
 
 export type NavigationType = ReturnType<typeof navigationFn>;
-
