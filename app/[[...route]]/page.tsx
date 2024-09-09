@@ -4,7 +4,7 @@ import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 
-import MobileNav from "../_components/MobileNav";
+import MobileNav from "./_components/MobileNav";
 
 export default function CurrPage({ params }: { params: { route: string[] } }) {
   const showParams = (route: string[]) => {
