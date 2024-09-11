@@ -76,3 +76,6 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 - Anderson Osayerie - [@andemosa](https://andemosa.tech)
 - Twitter - [@andemosa](https://www.twitter.com/andemosa)
+
+## Blogpost
+Follow along a blogpost that can be found here - [Building a Dynamic Nested Mobile Navigation Menu with React](https://dev.to/andemosa/building-a-dynamic-nested-mobile-navigation-menu-with-react-5b8i)
